@@ -120,7 +120,7 @@ const Blog = () => {
 
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="relative overflow-hidden pt-32 pb-20 max-h-[95vh] flex items-center justify-center">
+        <section className="relative overflow-hidden pt-20 pb-20 flex items-center ">
           {/* Gradient background */}
           <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-800 z-0"></div>
 

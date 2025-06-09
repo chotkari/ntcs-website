@@ -140,7 +140,7 @@ const Hero = () => {
               {/* Key benefits */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 relative">
                 {[
-                  "15+ Years Experience",
+                  "5+ Years Experience",
                   "24/7 Support",
                   "Certified Technicians",
                   "Competitive Pricing"
@@ -205,7 +205,7 @@ const Hero = () => {
                   <div className="grid grid-cols-3 gap-4 mt-6 text-center pb-6">
                     {[
                       { value: "500+", label: "Projects" },
-                      { value: "15+", label: "Years" },
+                      { value: "5+", label: "Years" },
                       { value: "24/7", label: "Support" }
                     ].map((stat, index) => (
                       <div key={index} className="p-2">

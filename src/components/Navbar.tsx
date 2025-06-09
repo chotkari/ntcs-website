@@ -49,7 +49,7 @@ const Navbar = () => {
       aria-label="Main navigation"
     >
       {/* Top contact bar */}
-      <div className="bg-primary text-white py-2 px-4 text-sm">
+      <div className="bg-primary text-white py-2  text-sm">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <a 
@@ -94,7 +94,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -116,7 +116,7 @@ const Navbar = () => {
           {/* Mobile menu button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
             aria-label={isOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={isOpen}
           >
@@ -129,7 +129,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div className={`mobile-menu md:hidden ${isOpen ? 'open' : ''}`}>
+        <div className={`mobile-menu lg:hidden ${isOpen ? 'open' : ''}`}>
           <div className="py-4 space-y-4 border-t border-gray-200">
             {navItems.map((item) => (
               <Link

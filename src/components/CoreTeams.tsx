@@ -84,7 +84,7 @@ const CoreTeams = () => {
             </div>
 
             {/* Team grid */}
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
               {team.map((member, index) => (
                 <div
                   key={index}

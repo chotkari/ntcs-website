@@ -72,9 +72,9 @@ const About = () => {
     <div className="min-h-screen">
       <Navbar />
 
-      <main className="pt-20 md:pt-[3.5rem]">
+      <main className="pt-20  md:pt-[3.5rem]">
         <section
-          className="relative overflow-hidden pt-32 pb-20 h-[95vh] flex items-center"
+          className="relative overflow-hidden pt-20 pb-20 flex items-center min-h-screen "
           id="about-hero"
         >
           {/* Gradient background matching your style */}
