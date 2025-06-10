@@ -37,7 +37,8 @@ const Navbar = () => {
     { href: '/projects', label: 'Projects' },
     { href: '/process', label: 'Process' },
     { href: '/blog', label: 'Blog' },
-    { href: '/contact', label: 'Contact' }
+    { href: '/contact', label: 'Contact' },
+    { href: '/teams', label: 'Teams' }
   ];
 
   return (
@@ -87,7 +88,7 @@ const Navbar = () => {
             >
              <img src={Logo} alt="logo" className='h-10'/>
             </Link>
-            <div className="hidden sm:block ml-2 text-sm text-gray-600">
+            <div className="hidden sm:block ml-2 text-sm text-accent">
               <div>New Tech</div>
               <div>Conslutancy Services</div>
             </div>

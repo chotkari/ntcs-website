@@ -14,6 +14,7 @@ import BlogPost from './pages/BlogPost';
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop"
+import Teams from "./pages/Teams";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/process" element={<Process />} />
+          <Route path="/teams" element={<Teams />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />

@@ -93,21 +93,7 @@ const Hero = () => {
       
       {/* Animated tech pattern */}
       <div className="absolute inset-0 overflow-hidden z-1">
-        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1200 800" preserveAspectRatio="none">
-          {/* Circuit lines */}
-          <path 
-            d="M200,100 L1000,100 M200,300 L1000,300 M200,500 L1000,500 M200,700 L1000,700"
-            stroke="rgba(99,102,241,0.15)" 
-            strokeWidth="2"
-            strokeDasharray="10 5"
-          />
-          {/* Animated connection dots */}
-          {[150, 350, 550, 750].map((y, i) => (
-            <circle key={i} cx={300 + i * 100} cy={y} r="2" fill="#6366f1">
-              <animate attributeName="opacity" values="0.3;0.8;0.3" dur={`${3 + i}s`} repeatCount="indefinite"/>
-            </circle>
-          ))}
-        </svg>
+        
         
         {/* Floating gradient blobs */}
         <div className="absolute -left-20 -top-20 w-80 h-80 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 opacity-10 blur-3xl animate-pulse"></div>

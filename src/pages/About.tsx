@@ -1,15 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Teams from "../components/Teams";
-import CoreTeams from "@/components/CoreTeams";
+
 import { Rocket, Eye, Star, Cpu } from "lucide-react";
 import TeamColaboration from "../image/team-collaboration.jpg";
 import seniorMentoring from "../image/senior-mentoring.png";
 import programmerWorking from "../image/programmer-working.png";
 import PairWorking from "../image/pair-working.jpg";
 import collaborationOnComputer from "../image/collaboration-on-computer.png";
-import { Link } from "react-router-dom";
 
 const About = () => {
   const values = [
@@ -76,34 +74,13 @@ const About = () => {
         <section
           className="relative overflow-hidden pt-20 pb-20 flex items-center min-h-screen "
           id="about-hero"
-        >
+          >
           {/* Gradient background matching your style */}
           <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-800 z-0"></div>
 
           {/* Animated tech elements */}
           <div className="absolute inset-0 overflow-hidden z-1">
-            <svg
-              className="absolute inset-0 w-full h-full"
-              viewBox="0 0 1200 800"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M200,200 L1000,200 M200,400 L1000,400 M200,600 L1000,600"
-                stroke="rgba(99,102,241,0.15)"
-                strokeWidth="2"
-                strokeDasharray="10 5"
-              />
-              {[250, 450, 650].map((y, i) => (
-                <circle key={i} cx={300 + i * 150} cy={y} r="2" fill="#6366f1">
-                  <animate
-                    attributeName="opacity"
-                    values="0.3;0.8;0.3"
-                    dur={`${3 + i}s`}
-                    repeatCount="indefinite"
-                  />
-                </circle>
-              ))}
-            </svg>
+           
 
             {/* Floating blobs */}
             <div className="absolute -left-20 -top-20 w-80 h-80 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 opacity-10 blur-3xl animate-pulse"></div>
@@ -266,9 +243,7 @@ const About = () => {
             />
           </div>
         </section>
-        {/* Team */}
-        <Teams />
-        <CoreTeams />
+        
       </main>
       {/* Our Journey Timeline - Refined */}
      <section className="py-20 bg-gray-50">

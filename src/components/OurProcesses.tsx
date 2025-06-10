@@ -50,7 +50,6 @@ const OurProcess = () => {
       bgColor: "bg-amber-50",
       deliverables: ["Training Docs", "Maintenance Plan", "Handover"],
     },
-    
   ];
 
   return (
@@ -77,7 +76,7 @@ const OurProcess = () => {
 
         {/* Process Timeline */}
         <div className="relative">
-          {/* Progress line */}
+          {/* Progress line (desktop only) */}
           <div className="hidden lg:block absolute left-1/2 top-0 h-full w-0.5 bg-gradient-to-b from-primary to-accent transform -translate-x-1/2"></div>
 
           {/* Steps */}
@@ -90,6 +89,13 @@ const OurProcess = () => {
                 }`}
                 data-aos="fade-up"
               >
+                {/* Step Number for mobile (above content) */}
+                <div className="lg:hidden flex justify-center mb-6">
+                  <div className="w-16 h-16 rounded-full bg-white border-4 border-primary text-primary font-bold text-2xl flex items-center justify-center shadow-lg">
+                    {index + 1}
+                  </div>
+                </div>
+
                 {/* Step Content */}
                 <div
                   className={`lg:w-1/2 ${
@@ -152,16 +158,9 @@ const OurProcess = () => {
                   </div>
                 </div>
 
-                {/* Step Number (for desktop) */}
+                {/* Step Number (desktop only) */}
                 <div className="hidden lg:flex items-center justify-center w-16 h-16 rounded-full bg-white border-4 border-primary text-primary font-bold text-2xl absolute left-1/2 transform -translate-x-1/2 shadow-lg">
                   {index + 1}
-                </div>
-
-                {/* Spacer for mobile */}
-                <div className="lg:hidden flex justify-center my-8">
-                  <div className="w-16 h-16 rounded-full bg-white border-4 border-primary text-primary font-bold text-2xl flex items-center justify-center shadow-lg">
-                    {index + 1}
-                  </div>
                 </div>
               </div>
             ))}
