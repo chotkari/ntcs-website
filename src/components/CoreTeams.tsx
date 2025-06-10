@@ -18,10 +18,7 @@ import seventeen from "../image/17.png";
 import eighteen from "../image/18.png"; 
 import nineteen from "../image/19.png"; 
 import twenty from "../image/20.png"; 
-import twentyone from "../image/21.png"; 
-import twentysix from "../image/26.png"; 
-import twentyseven from "../image/27.png"; 
-import twentyeight from "../image/28.png"; 
+
 const CoreTeams = () => {
  const team = [
     {  
@@ -59,7 +56,7 @@ const CoreTeams = () => {
     {image:nineteen},
     {image:twenty},
     
-    {image:twentysix},
+    
     
   ];
     

@@ -3,28 +3,29 @@ import prakash from "../image/prakash-bhandari.png";
 import om from "../image/om-shrestha.png";
 import bijay from "../image/bijaya-prasad-kuikel.png";
 import pratish from "../image/Pratish Shakya.png";
-import madhu from "../image/28.png"
-import nabin from "../image/21.png"
-import pancoz from "../image/puncoz-nepal.png"
-import bibek from "../image/27.png"
+import madhu from "../image/28.png";
+import nabin from "../image/21.png";
+import pancoz from "../image/puncoz-nepal.png";
+import bibek from "../image/27.png";
+import prabesh from "../image/26.png"
 
 const Teams = () => {
   const team = [
     {
       name: "Prakash Bhandari",
-      position: "Chief Executive Officer",
+      position: "President",
       image: prakash,
       bio: "Under his leadership, NTCS has aimed to deliver innovative and scalable digital solutions tailored to diverse business needs.",
     },
     {
       name: "Pratish Shakya",
-      position: "Chief Marketing Officer",
-      image:pratish,
+      position: "Director of Brand and Strategy",
+      image: pratish,
       bio: "Leads the marketing vision of the company with a focus on brand storytelling, digital transformation, and data-informed growth strategies",
     },
     {
       name: "Om Shrestha",
-      position: "Chief Operation Officer",
+      position: "Director of Operations",
       image: om,
       bio: "optimizing operations directly contributes to NTCS's ability to meet client expectations, maintain a competitive edge, and achieve sustainable growth.",
     },
@@ -40,8 +41,7 @@ const Teams = () => {
     {
       name: "Madhu Sudhan Subedi",
       position: "Backend Engineer & Agile Evangelist",
-      image:
-        madhu, // Replace with actual image URL
+      image: madhu, // Replace with actual image URL
       bio: "Madhu is a backend expert known for delivering value with every iteration. With experience at Monotype’s UBA Solutions and now Hivelocity Inc. Japan, he has handled data migrations, large-scale AWS transitions, and security upgrades for global e-commerce platforms. Madhu is also an Agile coach, instructor, and content creator, promoting clean code, teamwork, and technical excellence.",
     },
     {
@@ -65,6 +65,11 @@ const Teams = () => {
       // Replace with actual image URL
       bio: "Bibek brings over 7 years of specialized experience working with Odoo ERP across diverse industries, including e-commerce, hydro, and agriculture. He played a lead role in the implementation of Odoo for Jeevee, one of Nepal’s leading e-commerce platforms, tailoring modules to support complex logistics and regulatory standards",
     },
+    {
+      name: "Prabesh Dahal",
+      position: "Director of Engineering",
+      image: prabesh, // Replace with actual image URL
+      bio:"A visionary engineering leader known for driving innovation across software development, infrastructure, and product delivery. As a Director of Engineering, this individual combines deep technical expertise in full-stack development and cloud architecture with a passion for mentoring teams and scaling engineering operations. They have led cross-functional teams in both startup and enterprise settings, consistently delivering scalable, high-performance solutions aligned with business goals."    },
   ];
 
   return (
