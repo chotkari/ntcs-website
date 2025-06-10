@@ -68,11 +68,14 @@ const Footer = () => {
   ];
 
   const services = [
-    "ERP System Development",
-    "Custom Software Development",
-    "IT Consulting & System Architecture",
-    "Cloud Solutions",
-  ];
+  { name: "ERP System Development", slug: "erp" },
+  { name: "Custom Software Development", slug: "custom-software" },
+  { name: "IT Consulting & System Architecture", slug: "it-consulting" },
+  { name: "System Integration", slug: "system-integration" },
+  { name: "Technical Support", slug: "support" },
+  { name: "Business Intelligence", slug: "bi" },
+];
+
 
   return (
     <footer className="bg-primary-800 text-primary-50 relative overflow-hidden">
@@ -161,13 +164,13 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3">
               {services.map((service) => (
-                <li key={service}>
+                <li key={service.slug}>
                   <Link
-                    to="/services#services"
+                    to={`/services#${service.slug}`}
                     className="text-primary-300 hover:text-white transition-colors duration-200 flex items-start"
                   >
                     <span className="w-1 h-1 bg-secondary rounded-full mt-2 mr-2 flex-shrink-0"></span>
-                    {service}
+                    {service.name}
                   </Link>
                 </li>
               ))}

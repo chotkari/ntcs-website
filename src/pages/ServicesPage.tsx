@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import IndustriesWeServe from "@/components/IndustriesWeServe";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 import pairWorking from "../image/pair-working.jpg";
 import { CheckCircle } from "lucide-react";
@@ -16,12 +18,27 @@ import {
 } from "lucide-react";
 
 const ServicesPage = () => {
+   const location = useLocation();
+
+  useEffect(() => {
+    // Scroll to section with id from hash
+    if (location.hash) {
+      const element = document.getElementById(location.hash.replace("#", ""));
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100); // Delay ensures DOM is ready
+      }
+    }
+  }, [location]);
+
   const [activeFilter, setActiveFilter] = useState("All");
 
   const categories = ["All", "Network", "Development", "Support"];
 
   const services = [
     {
+      slug: "erp",
       icon: Boxes,
       category: "Development",
       title: "ERP System Development",
@@ -36,6 +53,7 @@ const ServicesPage = () => {
     },
 
     {
+      slug: "custom-software",
       icon: Code2,
       category: "Development",
       title: "Custom Software Development",
@@ -49,6 +67,7 @@ const ServicesPage = () => {
       ],
     },
     {
+      slug: "it-consulting",
       icon: Network,
       category: "Network",
       title: "IT Consulting & System Architecture",
@@ -62,6 +81,7 @@ const ServicesPage = () => {
       ],
     },
     {
+      slug: "system-integration",
       icon: Merge,
       category: "Development",
       title: "Systems Integration",
@@ -75,6 +95,7 @@ const ServicesPage = () => {
       ],
     },
     {
+      slug: "support",
       icon: LifeBuoy,
       category: "Support",
       title: "Maintenance & Technical Support",
@@ -88,6 +109,7 @@ const ServicesPage = () => {
       ],
     },
     {
+      slug: "bi",
       icon: BarChart3,
       category: "Development",
       title: "Data & Business Intelligence",
@@ -211,7 +233,7 @@ const ServicesPage = () => {
           </div>
 
           {/* Services Grid */}
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4" id="service">
             <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredServices.map((service, index) => {
@@ -219,6 +241,7 @@ const ServicesPage = () => {
                   return (
                     <div
                       key={index}
+                      id={service.slug}
                       className="group relative bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 overflow-hidden"
                     >
                       {/* Glow effect on hover */}

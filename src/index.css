@@ -110,6 +110,7 @@
   /* Smooth scrolling */
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 120px;
   }
 
   /* Critical CSS for above-the-fold content */
