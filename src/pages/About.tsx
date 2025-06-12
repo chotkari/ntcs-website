@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import { Rocket, Eye, Star, Cpu } from "lucide-react";
 import TeamColaboration from "../image/team-collaboration.jpg";
 import seniorMentoring from "../image/senior-mentoring.png";
-import programmerWorking from "../image/programmer-working.png";
+import programmerWorking from "../image/untitleddesign.png";
 import malePair from "../image/male_pair.png";
 import collaborationOnComputer from "../image/collaboration-on-computer.png";
 
