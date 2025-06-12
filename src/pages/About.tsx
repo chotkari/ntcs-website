@@ -6,7 +6,7 @@ import { Rocket, Eye, Star, Cpu } from "lucide-react";
 import TeamColaboration from "../image/team-collaboration.jpg";
 import seniorMentoring from "../image/senior-mentoring.png";
 import programmerWorking from "../image/programmer-working.png";
-import PairWorking from "../image/pair-working.jpg";
+import malePair from "../image/male_pair.png";
 import collaborationOnComputer from "../image/collaboration-on-computer.png";
 
 const About = () => {
@@ -237,7 +237,7 @@ const About = () => {
               className="rounded-lg shadow-md h-48 w-full object-cover hidden md:block"
             />
             <img
-              src={PairWorking} // Your image #5
+              src={malePair} // Your image #5
               alt="Pair programming"
               className="rounded-lg shadow-md h-48 w-full object-cover"
             />
