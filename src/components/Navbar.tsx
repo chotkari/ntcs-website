@@ -91,7 +91,7 @@ const Navbar = () => {
             </Link>
             <div className="hidden sm:block ml-2 text-sm text-accent">
               <div>New Tech</div>
-              <div>Conslutancy Services</div>
+              <div>Consultancy Services</div>
             </div>
           </div>
 
