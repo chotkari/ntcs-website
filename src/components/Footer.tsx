@@ -35,7 +35,7 @@ const Footer = () => {
           },
           body: JSON.stringify({
             email,
-            _subject: "New Newsletter Subscriber",
+            _subject: "NTCS email subscription",
             _template: "box",
           }),
           signal: controller.signal,
@@ -43,7 +43,7 @@ const Footer = () => {
       );
 
       if (response.ok) {
-        setStatus("✅ Thank you for subscribing!");
+        setStatus("✅ Thank you!");
         setEmail("");
       } else {
         setStatus("❌ Something went wrong. Please try again.");
@@ -230,16 +230,15 @@ const Footer = () => {
         <div className="mt-16 pt-12 border-t border-primary-600">
           <div className="max-w-2xl mx-auto text-center">
             <h4 className="text-xl font-semibold text-white mb-3">
-              Stay Updated
+              Stay in Touch
             </h4>
             <p className="text-primary-300 mb-6 max-w-lg mx-auto">
-              Subscribe to our newsletter for the latest IT insights and company
-              updates.
+              Leave your email to get occasional updates and announcements from NTCS.
             </p>
             <form
               onSubmit={handleSubmit}
-              className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-              aria-label="Newsletter signup"
+              className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto items-center"
+              aria-label="Stay in touch"
             >
               <input
                 type="email"
@@ -247,18 +246,18 @@ const Footer = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email address"
-                className="flex-1 px-4 py-3 rounded-lg bg-primary-700 border border-primary-600 text-white placeholder-primary-300 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+                className="md:flex-1 px-4 py-3 w-full sm:w-auto rounded-lg bg-primary-700 border border-primary-600 text-white placeholder-primary-300 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
                 required
               />
               <button
                 type="submit"
-                className="px-6 py-3 bg-accent hover:bg-accent-600 text-white font-medium rounded-lg transition-colors duration-200"
+                className="px-6 py-3 w-full sm:w-auto bg-accent hover:bg-accent-600 text-white font-medium rounded-lg transition-colors duration-200"
               >
-                Subscribe
+                Submit
               </button>
 
               {status && (
-                <p className="text-sm text-center text-white mt-2 sm:col-span-2">
+                <p className="text-sm text-center text-white sm:col-span-2">
                   {status}
                 </p>
               )}
